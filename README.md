@@ -15,7 +15,6 @@ Programming language: Golang. Backend server: Echo framework. Database: PostgreS
 
 Dependency software:
 
-- Polar
 - [lnrpc](github.com/lncm/lnd-rpc/v0.10.0/lnrpc)
 
 Dependency libraries:
@@ -25,3 +24,10 @@ Backend:
 RESTful API using Echo framework. Modular file structure. Endpoints:
 
 The payment link is generated and added to the database, this payment link can be sent to multiple people for payment for things.
+
+Running the application
+
+- Make sure to have golang installed
+- Also have your postgres environment variables set, check .env.example for variables
+- Use [this](https://medium.com/@bitstein/setting-up-a-bitcoin-lightning-network-test-environment-ab967167594a) link to setup a lignthning backend, alternatively you can use [polar](https://lightningpolar.com/).
+- Start application using the instruction `go run cmd/lnd/main.go`
